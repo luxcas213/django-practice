@@ -1,0 +1,13 @@
+
+{% extends 'base.html'%}
+
+
+{% block content %}
+
+<h1>tareas</h1>
+{% for task in tasks %}
+    <h3>{{task.title}}</h3>
+    <p>{{task.description}}</p>
+    <p>{{task.done}}</p>
+{% endfor %}
+{% endblock %}
